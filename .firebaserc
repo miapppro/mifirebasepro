@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mifirebasepro": {
+      "hosting": {
+        "mifirebasepro": [
+          "mifirebasepro"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mifirebasepro"
+  }
+}
