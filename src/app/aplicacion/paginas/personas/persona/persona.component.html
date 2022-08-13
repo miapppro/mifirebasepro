@@ -1,0 +1,13 @@
+<p>persona works!</p>
+
+<button (click)="nuevo()">
+    Nueva Persona
+</button>
+
+
+<ul>
+    <li *ngFor="let item of lista">
+        <button (click)="editar(item)"> Editar </button>
+        <button (click)="eliminar(item)"> Eliminar </button> : {{item.nombres}}
+    </li>
+</ul>

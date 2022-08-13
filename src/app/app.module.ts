@@ -12,14 +12,24 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 
+
+
+
+import { PaginasComponent } from './aplicacion/paginas/paginas.component';
+import { HerramientasModule } from './aplicacion/herramientas/herramientas.module';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PaginasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+
+    HerramientasModule,
+
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the application is stable
